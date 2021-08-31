@@ -39,22 +39,35 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
-img{
-    max-width: 800px;
+
+h2{
+    font-family: 'Montserrat';
 }
+
+.secaoContato .flex-col{
+    width: 250px;
+}
+
 div.flex{
     display: flex;
 }
+
 div.full-container{
     width: 100%;
     max-width: 1850px;
     margin:0 auto;
 }
+
+.secaoSobre img{ 
+    width: 200px;
+}
+
 div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
 }
+
 div.container{
     width: 100%;
     max-width: 1140px;
@@ -76,6 +89,12 @@ body{
 figcaption {
     opacity: 0;
 }
+
+.secaoDestaque{
+    background-color: #00043e;
+
+}
+
 /* BODY */
   
 /* HEADER */
@@ -86,14 +105,16 @@ figcaption {
 }
 
 .large-container {
-    display: flex;
+    position: relative;
     width: 100%;
 }
 
-.large-container figure img {
+.large-container .logo img{
     left: 5%;
     top: 5px;
-    width: 150px;
+    width: 55px;
+    margin: 5px 0 5px 5px;
+    
 }
 
 nav {
@@ -102,10 +123,51 @@ nav {
 }
 
 .menuBars img {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    width: 30px;
+    margin: 10px 10px 0 0;
+}
+
+.secaoDestaque {
     display: flex;
+    height: 200px;
+    position: relative;
+}
+
+.destaque1{
+    font-weight: 400;
+    height: 100px;
     flex-direction: row;
-    justify-content: flex-end;
-    float: right;
+    color: white;
+    flex-wrap: wrap;
+    
+    text-align: center;
+    max-width: 210px;
+}
+
+.secaoDestaque p {
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    top: 113px;
+}
+
+.secaoDestaqueFormulario {
+    position: absolute;
+    top: 155px;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+.secaoDestaqueFormulario button{
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    transform: translateX(-60%);
 }
 
 /* HEADER */
@@ -113,12 +175,16 @@ nav {
 /* FOOTER */
 footer{}
 /* FOOTER */
+footer{
+    text-align: center;
+    padding: 5%;
+}
 
-/* INICIAL */
-main{}
-/* INICIAL */
+footer img{
+    width: 30px;
+}
 
-/* EXTRAS */
+
 
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
@@ -135,5 +201,31 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        footer{
+            text-align: center;
+            padding: 5%;
+        }
+        /* CONTACT SECTION FOOTER */
+        section.secaoContato .flex{ 
+            color: #303030;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 auto;
+            line-height: 2;
+            justify-content: space-around;
+        }
+        /* CALENDAR SECTION */
+        .calendario{
+            flex-direction: row;
+        
+        }
+
+        .calendario li{
+            margin: 20px;
+        }
+
+
+    }
 /* MEDIA QUERIES */
