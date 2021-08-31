@@ -39,8 +39,9 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
-img{
-    max-width: 200px;
+
+h2{
+    font-family: 'Montserrat';
 }
 
 .secaoContato .flex-col{
@@ -54,6 +55,15 @@ div.full-container{
     max-width: 1850px;
     margin:0 auto;
 }
+
+.secaoSobre img{ 
+
+        width: 200px;
+}
+
+header img {
+    width: 200px;
+}
 div.large-container{
     width: 100%;
     max-width: 1170px;
@@ -64,7 +74,7 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
-/* GERAL */
+/* ESTILIZANDO SEÇÃO DE CONTATO PRÓXIMO AO FOOTER */
 
 section.secaoContato{
     background-color: #DCDCDC;
@@ -82,7 +92,6 @@ section.secaoContato .flex{
 section.secaoContato h2{
     color: black;
     text-transform: uppercase;
-    font-family: 'Montserrat';
     padding-top: 50px;
     padding-bottom: 30px;
     font-weight: 700;
@@ -126,22 +135,138 @@ a{
     width: 50px;
     height: 30px;
 }
+/*INICIANDO ESTILIZAÇÃO DA SEÇÃO CURSOS*/
+
+.secaoCursos{
+    width: 100%;
+}
+
+.secaoCursos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoCursos article .secaoCursos__subtitulo{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+
+}
+
+section.secaoCursos article ul li img{
+    width: 100px;
+}
+
+.secaoCursos article ul{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.secaoCursos article ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.secaoCursos article ul li p{
+    font-size: 19px;
+    text-align: center;
+    color: #818181;
+    
+}
+
+.secaoCursos article ul li h3{
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*INICIANDO ESTILIZAÇÃO DA SEÇÃO DE CALENDARIO*/
+.secaoCalendar{
+    display: flex;
+    line-height: 50px;
+    width: 300px;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.secaoCalendar p{
+    font-size: 25px;
+    line-height: 1.2;
+
+
+}
+
+
+.calendario{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+}
+.calendario li{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 30px;
+    text-align: center;
+}
+.calendario li h3{
+    margin: 25px;
+    font-weight: lighter;
+    font-size: 19px
+
+}
+.calendario li .calendario-data{
+    font-size: 36px;
+    color: #fff;
+    background-color: #00043e;
+    padding: 30px;
+}
+
+.calendario li .calendario-data-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calendario li .calendario-data-rodape span{
+    color: #6b6b6b;
+    font-size: 30px;
+}
+
+.calendario-data-rodape button{
+
+    font-size: 32px;
+    margin: 20px 0;
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: #007aff;
+}
+.calendario li p{
+
+    color: #818181;
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 20px;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 20px;
+}
 
 
 
-
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
-  
 /* FOOTER */
 footer{
     text-align: center;
@@ -151,13 +276,8 @@ footer{
 footer img{
     width: 30px;
 }
-/* FOOTER */
 
-/* INICIAL */
-main{}
-/* INICIAL */
 
-/* EXTRAS */
 
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
@@ -179,8 +299,8 @@ main{}
             text-align: center;
             padding: 5%;
         }
-
-        section.secaoContato .flex{
+        /* CONTACT SECTION FOOTER */
+        section.secaoContato .flex{ 
             color: #303030;
             width: 100%;
             flex-direction: row;
@@ -189,6 +309,16 @@ main{}
             line-height: 2;
             justify-content: space-around;
         }
+        /* CALENDAR SECTION */
+        .calendario{
+            flex-direction: row;
+        
+        }
+
+        .calendario li{
+            margin: 20px;
+        }
+
 
     }
 /* MEDIA QUERIES */
