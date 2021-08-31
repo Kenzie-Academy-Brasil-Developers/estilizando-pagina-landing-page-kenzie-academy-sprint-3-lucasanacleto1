@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 /*
 Theme Name: Landing Page Kenzie Academy
@@ -58,77 +56,93 @@ div.full-container{
     margin:0 auto;
 }
 
+div.large-container{
+    width: 100%;
+    max-width: 1170px;
+    margin:0 auto;
+}
+div.container{
+    width: 100%;
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+/* HEADER */
+   
 .topo {
     background-color: #00043e;
-    height: 65px;
-    width: 100%;
 }
-​
-.large-container {
-    position: relative;
-    width: 100%;
-}
-​
-.large-container .logo img{
-    left: 5%;
-    top: 5px;
-    width: 55px;
-    margin: 5px 0 5px 5px;
-    
-}
-​
-nav {
-    font-size: 13px;
-    display: none;
-}
-​
-.menuBars img {
-    position: absolute;
-    right: 5%;
-    top: 2%;
-    width: 30px;
-    margin: 10px 10px 0 0;
-}
-​
-.secaoDestaque {
+
+.sub-container {
     display: flex;
-    height: 200px;
-    position: relative;
-}
-​
-.destaque1{
+    justify-content: space-between;
+  }
+  
+.sub-container img {
+    max-width: 100px;
+    padding: 1rem;
+  }
+  
+.sub-container figure figcaption{
+    visibility: hidden;
+  }
+  
+.sub-container nav {
+    display: none;
+  }
+  
+.secaoDestaque {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    height: 15rem;
+    color: white;
+    background-color: #00043e;
+  }
+
+.secaoDestaque h2 {
+    margin-left: 6rem;
+    margin-right: 6rem;
     font-weight: 400;
-    height: 100px;
-    flex-direction: row;
-    color: white;
-    flex-wrap: wrap;
-    
     text-align: center;
-    max-width: 210px;
+  }
+
+.secaoDestaque h2 span {
+    display: block;
 }
-​
+
 .secaoDestaque p {
+    margin: 1.2rem;
     font-weight: 100;
+  }
+  
+.secaoDestaque input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    color: #818181;
+    float: left;
+    border: none;
+  }
+.secaoDestaque button {
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    font-size: 1rem;
     color: white;
-    position: absolute;
-    font-size: 17px;
-    text-align: center;
-    top: 113px;
-}
-​
+    background-color: #007aff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: left;
+    border: none;
+  }
 .secaoDestaqueFormulario {
-    position: absolute;
-    top: 155px;
-    left: 50%;
-    transform: translateX(-60%);
-}
-​
-.secaoDestaqueFormulario button{
-    position: absolute;
-    top: 0px;
-    left: 100%;
-    transform: translateX(-60%);
-}
+    border: 0;
+    display: inline-block;
+  }
+
 
 /* INICIANDO SEÇÃO SOBRE */
 .secaoSobre img{ 
@@ -220,20 +234,6 @@ width: 300px;
     padding-bottom: 20px;
 }
 
-
-header img {
-    width: 200px;
-}
-div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
-}
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
-}
 /* ESTILIZANDO SEÇÃO DE CONTATO PRÓXIMO AO FOOTER */
 
 section.secaoContato{
@@ -454,6 +454,104 @@ footer img{
     @media screen and (min-width: 400px) {}
   
     @media screen and (min-width: 800px) {
+       /* HEADER E DESTAQUE */
+       
+       .topBackground {
+        background-image: url('/assets/img/background-destaque.webp');
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      div.large-container {
+        max-width: 100%;
+      }
+    
+      .sub-container {
+        background-color: #00043e;
+        height: 55px;
+        margin-bottom: 70px;
+      }
+    
+      .menuBars img {
+          display: none;
+      }
+
+      .logo img {
+        width: 40px;
+        margin: 0 0 0 150px;
+        padding-top: 5px;
+      }
+
+      .sub-container nav {
+        display: flex;
+      }
+      
+      .sub-container nav ul {
+        margin-right: 3rem;
+      }
+        
+      .sub-container nav li a{
+        font-size: 13px;
+        color: white;
+        letter-spacing: 3px;
+      
+      }
+      .sub-container nav li a:hover {
+        color: yellow;
+      }
+    
+      .sub-container nav li a:link {
+        text-decoration: none;
+      }
+    
+      .sub-container nav li{
+        display: inline-block;
+        margin: 1rem;
+      }
+      
+      .secaoDestaque {
+          position: relative;
+          background-color: transparent;
+      }
+
+      .secaoDestaque h2 {
+        font-size: 63px;
+        top: 0px;
+        text-align: center;
+      }
+
+      .secaoDestaque p{
+        font-size: 21px;
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .secaoDestaque input{
+        font-size: 14px;
+        position: absolute;
+        width: 35%;
+        top: 185px;
+        left: 45%;
+        transform: translateX(-50%);
+      }
+      .secaoDestaque button{
+        font-size: 14px;
+        position: absolute;
+        width: 10%;
+        top: 185px;
+        left: 60%;
+        transform: translateX(-50%);
+      }
+
+      .secaoDestaque button:hover{
+        border: 1px solid white;
+        cursor: pointer;
+      }
+       
+       
         footer{
             text-align: center;
             padding: 5%;
@@ -522,9 +620,8 @@ footer img{
 
 
     }
-}
 
 
-    }
+
+    
 /* MEDIA QUERIES */
->>>>>>> 6c7d63f5572607d786df410b83607f0eec81dd3c
