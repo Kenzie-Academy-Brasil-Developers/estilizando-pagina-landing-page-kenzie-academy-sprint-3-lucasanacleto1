@@ -63,15 +63,51 @@ div.container{
 /* GERAL */
   
 /* HTML */
-html{}
+html{
+
+}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+figcaption {
+    opacity: 0;
+}
 /* BODY */
   
 /* HEADER */
-header{}
+.topo {
+    background-color: #00043e;
+    height: 65px;
+    width: 100%;
+}
+
+.large-container {
+    display: flex;
+    width: 100%;
+}
+
+.large-container figure img {
+    left: 5%;
+    top: 5px;
+    width: 150px;
+}
+
+nav {
+    font-size: 13px;
+    display: none;
+}
+
+.menuBars img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+}
+
 /* HEADER */
   
 /* FOOTER */
