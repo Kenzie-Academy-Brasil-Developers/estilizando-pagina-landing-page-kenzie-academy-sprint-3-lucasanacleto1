@@ -582,6 +582,10 @@ footer img{
             line-height: 2;
             justify-content: space-around;
         }
+
+        .btn-send:hover{
+            cursor: pointer;
+        }
         /* CALENDAR SECTION */
         .calendario{
             flex-direction: row;
