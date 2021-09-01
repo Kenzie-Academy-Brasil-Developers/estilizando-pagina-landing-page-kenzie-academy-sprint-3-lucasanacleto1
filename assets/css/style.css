@@ -417,6 +417,13 @@ section.secaoCursos article ul li img{
     border-radius: 7px;
     background-color: #007aff;
 }
+
+.calendario button:hover{
+    border: 1px solid grey;
+    background-color: white;
+    color: #848484;
+    cursor: pointer;
+}
 .calendario li p{
     text-align: center;
     color: #818181;
@@ -455,14 +462,22 @@ footer img{
     @media screen and (min-width: 400px) {}
   
     @media screen and (min-width: 800px) {
+
+        .secaoSobre .flex .flex-col-1 button:hover{
+            background-color: #0678FA;
+            color: white;
+        }
        /* HEADER E DESTAQUE */
        
        .topBackground {
-        background-image: url('/assets/img/background-destaque.webp');
+        /* background-image: url('/assets/img/background-destaque.webp');   IMAGEM CARREGA NO LIVESERVER, [
+        MAS NÃO CARREGA NO GITHUB*/ 
         width: 100%;
         height: 500px;
+        background-color: #031D4B;
         background-repeat: no-repeat;
         background-size: cover;
+
       }
 
       div.large-container {
